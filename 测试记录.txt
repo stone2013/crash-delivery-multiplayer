@@ -1,0 +1,53 @@
+测试记录（不要把消息回环测试理解为公网联机测试）
+
+{
+  "version": "multiplayer-0.2.0",
+  "date": "2026-09-21",
+  "renderer": "Chromium 144, real WebGL via SwiftShader/Xvfb",
+  "transport_test": "Two isolated browser pages; JSON loopback test adapter; NOT a real WebRTC connection",
+  "application_checks": {
+    "delivered": true,
+    "same_score": true,
+    "explosion_sync": true,
+    "role_swap": true,
+    "guest_drives": true,
+    "swap_back": true,
+    "actor_animation": true,
+    "no_errors": true,
+    "webgl_clean": true
+  },
+  "mobile_checks": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "errors": [],
+      "pose_buttons": 8,
+      "game_gl_error": 0,
+      "game_mode": "playing"
+    },
+    {
+      "width": 320,
+      "height": 640,
+      "overflow": false,
+      "errors": [],
+      "pose_buttons": 8,
+      "game_gl_error": 0,
+      "game_mode": "playing"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "errors": [],
+      "pose_buttons": 8,
+      "game_gl_error": 0,
+      "game_mode": "playing"
+    }
+  ],
+  "not_verified": [
+    "Public PeerJS signaling and CDN availability",
+    "Cross-device / cross-ISP WebRTC and TURN",
+    "Physical iPhone/Safari runtime; only Chromium mobile emulation tested"
+  ]
+}
